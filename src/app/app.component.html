@@ -1,3 +1,12 @@
 <ion-app>
   <ion-router-outlet></ion-router-outlet>
+  <ion-content>
+    <h2>Connection status: {{status}}</h2>
+    <ion-item>
+      <ion-label>Value</ion-label>
+      <ion-input type="text" [(ngModel)]="value"></ion-input>
+    </ion-item>
+    <ion-button (click)="sendValue()">Send value</ion-button>
+    <ion-button (click)="checkStatus()">Check status</ion-button>
+  </ion-content>
 </ion-app>

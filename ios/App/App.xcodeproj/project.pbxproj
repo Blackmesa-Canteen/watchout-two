@@ -14,8 +14,42 @@
 		504EC30F1FED79650016851F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504EC30E1FED79650016851F /* Assets.xcassets */; };
 		504EC3121FED79650016851F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC3101FED79650016851F /* LaunchScreen.storyboard */; };
 		50B271D11FEDC1A000F3C39B /* public in Resources */ = {isa = PBXBuildFile; fileRef = 50B271D01FEDC1A000F3C39B /* public */; };
+		5630E03D2CBCEFA60092497B /* watchout_two_wearableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630E03C2CBCEFA60092497B /* watchout_two_wearableApp.swift */; };
+		5630E03F2CBCEFA60092497B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630E03E2CBCEFA60092497B /* ContentView.swift */; };
+		5630E0412CBCEFA70092497B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5630E0402CBCEFA70092497B /* Assets.xcassets */; };
+		5630E0442CBCEFA70092497B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5630E0432CBCEFA70092497B /* Preview Assets.xcassets */; };
+		5630E0472CBCEFA70092497B /* watchout-two-wearable Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5630E03A2CBCEFA60092497B /* watchout-two-wearable Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5630E04F2CBDD1550092497B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630E04E2CBDD1550092497B /* ExtensionDelegate.swift */; };
+		5630E0542CBDD2110092497B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630E0532CBDD2110092497B /* Extension.swift */; };
+		5630E0552CBDD2110092497B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630E0532CBDD2110092497B /* Extension.swift */; };
+		5630E0572CBDD2F80092497B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630E0562CBDD2F80092497B /* MainViewController.swift */; };
+		5630E05A2CBDD5B70092497B /* WatchOSPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630E0592CBDD5B70092497B /* WatchOSPlugin.swift */; };
 		A084ECDBA7D38E1E42DFC39D /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5630E0452CBCEFA70092497B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5630E0392CBCEFA60092497B;
+			remoteInfo = "watchout-two-wearable Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5630E0232CBCE6B90092497B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5630E0472CBCEFA70092497B /* watchout-two-wearable Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2FAD9762203C412B000D30F8 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
@@ -27,6 +61,19 @@
 		504EC3111FED79650016851F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		504EC3131FED79650016851F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B271D01FEDC1A000F3C39B /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
+		5630E02E2CBCEC520092497B /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		5630E02F2CBCEC720092497B /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.5.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
+		5630E0312CBCEC790092497B /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.5.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		5630E03A2CBCEFA60092497B /* watchout-two-wearable Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchout-two-wearable Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5630E03C2CBCEFA60092497B /* watchout_two_wearableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchout_two_wearableApp.swift; sourceTree = "<group>"; };
+		5630E03E2CBCEFA60092497B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5630E0402CBCEFA70092497B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5630E0432CBCEFA70092497B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5630E04E2CBDD1550092497B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5630E0532CBDD2110092497B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		5630E0562CBDD2F80092497B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5630E0582CBDD5800092497B /* watch-plugin-defination.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "watch-plugin-defination.h"; sourceTree = "<group>"; };
+		5630E0592CBDD5B70092497B /* WatchOSPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOSPlugin.swift; sourceTree = "<group>"; };
 		AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF51FD2D460BCFE21FA515B2 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
 		FC68EB0AF532CFC21C3344DD /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -41,12 +88,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5630E0372CBCEFA60092497B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		27E2DDA53C4D2A4D1A88CE4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5630E0312CBCEC790092497B /* WatchConnectivity.framework */,
+				5630E02F2CBCEC720092497B /* WatchKit.framework */,
 				AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */,
 			);
 			name = Frameworks;
@@ -55,7 +111,9 @@
 		504EC2FB1FED79650016851F = {
 			isa = PBXGroup;
 			children = (
+				5630E0532CBDD2110092497B /* Extension.swift */,
 				504EC3061FED79650016851F /* App */,
+				5630E03B2CBCEFA60092497B /* watchout-two-wearable Watch App */,
 				504EC3051FED79650016851F /* Products */,
 				7F8756D8B27F46E3366F6CEA /* Pods */,
 				27E2DDA53C4D2A4D1A88CE4A /* Frameworks */,
@@ -66,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				504EC3041FED79650016851F /* App.app */,
+				5630E03A2CBCEFA60092497B /* watchout-two-wearable Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +132,7 @@
 		504EC3061FED79650016851F /* App */ = {
 			isa = PBXGroup;
 			children = (
+				5630E02E2CBCEC520092497B /* App.entitlements */,
 				50379B222058CBB4000EE86E /* capacitor.config.json */,
 				504EC3071FED79650016851F /* AppDelegate.swift */,
 				504EC30B1FED79650016851F /* Main.storyboard */,
@@ -81,8 +141,31 @@
 				504EC3131FED79650016851F /* Info.plist */,
 				2FAD9762203C412B000D30F8 /* config.xml */,
 				50B271D01FEDC1A000F3C39B /* public */,
+				5630E0562CBDD2F80092497B /* MainViewController.swift */,
+				5630E0582CBDD5800092497B /* watch-plugin-defination.h */,
+				5630E0592CBDD5B70092497B /* WatchOSPlugin.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		5630E03B2CBCEFA60092497B /* watchout-two-wearable Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				5630E03C2CBCEFA60092497B /* watchout_two_wearableApp.swift */,
+				5630E03E2CBCEFA60092497B /* ContentView.swift */,
+				5630E0402CBCEFA70092497B /* Assets.xcassets */,
+				5630E0422CBCEFA70092497B /* Preview Content */,
+				5630E04E2CBDD1550092497B /* ExtensionDelegate.swift */,
+			);
+			path = "watchout-two-wearable Watch App";
+			sourceTree = "<group>";
+		};
+		5630E0422CBCEFA70092497B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5630E0432CBCEFA70092497B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		7F8756D8B27F46E3366F6CEA /* Pods */ = {
@@ -106,14 +189,33 @@
 				504EC3011FED79650016851F /* Frameworks */,
 				504EC3021FED79650016851F /* Resources */,
 				9592DBEFFC6D2A0C8D5DEB22 /* [CP] Embed Pods Frameworks */,
+				5630E0232CBCE6B90092497B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5630E0462CBCEFA70092497B /* PBXTargetDependency */,
+			);
+			name = App;
+			productName = App;
+			productReference = 504EC3041FED79650016851F /* App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5630E0392CBCEFA60092497B /* watchout-two-wearable Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5630E0482CBCEFA70092497B /* Build configuration list for PBXNativeTarget "watchout-two-wearable Watch App" */;
+			buildPhases = (
+				5630E0362CBCEFA60092497B /* Sources */,
+				5630E0372CBCEFA60092497B /* Frameworks */,
+				5630E0382CBCEFA60092497B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = App;
-			productName = App;
-			productReference = 504EC3041FED79650016851F /* App.app */;
+			name = "watchout-two-wearable Watch App";
+			productName = "watchout-two-wearable Watch App";
+			productReference = 5630E03A2CBCEFA60092497B /* watchout-two-wearable Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -122,12 +224,16 @@
 		504EC2FC1FED79650016851F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 0920;
 				TargetAttributes = {
 					504EC3031FED79650016851F = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1100;
+						ProvisioningStyle = Automatic;
+					};
+					5630E0392CBCEFA60092497B = {
+						CreatedOnToolsVersion = 15.4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -148,6 +254,7 @@
 			projectRoot = "";
 			targets = (
 				504EC3031FED79650016851F /* App */,
+				5630E0392CBCEFA60092497B /* watchout-two-wearable Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -163,6 +270,15 @@
 				50379B232058CBB4000EE86E /* capacitor.config.json in Resources */,
 				504EC30D1FED79650016851F /* Main.storyboard in Resources */,
 				2FAD9763203C412B000D30F8 /* config.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5630E0382CBCEFA60092497B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5630E0442CBCEFA70092497B /* Preview Assets.xcassets in Resources */,
+				5630E0412CBCEFA70092497B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,11 +325,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5630E0572CBDD2F80092497B /* MainViewController.swift in Sources */,
 				504EC3081FED79650016851F /* AppDelegate.swift in Sources */,
+				5630E05A2CBDD5B70092497B /* WatchOSPlugin.swift in Sources */,
+				5630E0542CBDD2110092497B /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5630E0362CBCEFA60092497B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5630E03F2CBCEFA60092497B /* ContentView.swift in Sources */,
+				5630E03D2CBCEFA60092497B /* watchout_two_wearableApp.swift in Sources */,
+				5630E04F2CBDD1550092497B /* ExtensionDelegate.swift in Sources */,
+				5630E0552CBDD2110092497B /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5630E0462CBCEFA70092497B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5630E0392CBCEFA60092497B /* watchout-two-wearable Watch App */;
+			targetProxy = 5630E0452CBCEFA70092497B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		504EC30B1FED79650016851F /* Main.storyboard */ = {
@@ -346,7 +484,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FC68EB0AF532CFC21C3344DD /* Pods-App.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
@@ -366,7 +506,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AF51FD2D460BCFE21FA515B2 /* Pods-App.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
@@ -378,6 +520,80 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5630E0492CBCEFA70092497B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchout-two-wearable Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "watchout-two-wearable";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = io.ionic.starter;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ionic.starter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		5630E04A2CBCEFA70092497B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchout-two-wearable Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "watchout-two-wearable";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = io.ionic.starter;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ionic.starter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
 			};
 			name = Release;
 		};
@@ -398,6 +614,15 @@
 			buildConfigurations = (
 				504EC3171FED79650016851F /* Debug */,
 				504EC3181FED79650016851F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5630E0482CBCEFA70092497B /* Build configuration list for PBXNativeTarget "watchout-two-wearable Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5630E0492CBCEFA70092497B /* Debug */,
+				5630E04A2CBCEFA70092497B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
