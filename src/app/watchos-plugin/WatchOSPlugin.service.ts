@@ -1,8 +1,7 @@
 import {Injectable} from "@angular/core";
-import {Capacitor, registerPlugin} from "@capacitor/core";
-import {WatchOSPlugin, pluginName, WatchOsStatus, SubscribeToValueCallback, CallbackID} from "./types"
-
-const WatchOSPlugin = registerPlugin<WatchOSPlugin>(pluginName);
+import {Capacitor } from "@capacitor/core";
+import {pluginName, WatchOsStatus, SubscribeToValueCallback, CallbackID} from "./types"
+import {watchOSPlugin} from "./WatchOSPlugin";
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +13,7 @@ export class WatchOSPluginSevice {
     if (!Capacitor.isPluginAvailable(pluginName)) {
       return WatchOsStatus.NotSupported;
     }
-    const result = await WatchOSPlugin.getState();
+    const result = await watchOSPlugin.getState();
     return result ? result.status : WatchOsStatus.CommunicationProblem;
   }
 
@@ -22,14 +21,14 @@ export class WatchOSPluginSevice {
     callback: SubscribeToValueCallback
   ): Promise<CallbackID | null> {
     if (Capacitor.isPluginAvailable(pluginName)) {
-      return await WatchOSPlugin.subscribe(callback);
+      return await watchOSPlugin.subscribe(callback);
     }
     return null;
   }
 
   async setValue(data: { value: string }): Promise<void> {
     if (Capacitor.isPluginAvailable(pluginName)) {
-      await WatchOSPlugin.setValue(data);
+      await watchOSPlugin.setValue(data);
     }
   }
 }
